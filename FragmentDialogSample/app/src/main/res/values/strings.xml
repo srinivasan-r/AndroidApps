@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FragmentDialogSample</string>
+    <string-array name="AppList">
+        <item>EMI Calc</item>
+        <item>Petrol vs Diesel Car</item>
+    </string-array>
+</resources>
