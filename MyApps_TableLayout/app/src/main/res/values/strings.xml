@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Apps</string>
+    <string name="title_app_detail">App Detail</string>
+	<string-array name="AppList">
+        <item>EMI Calc</item>
+        <item>Petrol vs Diesel Car</item>
+    </string-array>
+</resources>
