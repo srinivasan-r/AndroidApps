@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:stretchColumns="*">
+    <TableRow android:padding="15dp">
+        <TextView
+            android:text="asdfasf"/>
+        <TextView android:text="asdfasf"/>
+        <TextView android:text="asdfasf"/>
+    </TableRow>
+    <TableRow android:padding="15dp">
+        <TextView android:text="qsdfsfsdfsdfsdf231"/>
+        <TextView android:text="q231" android:padding="30dp"/>
+        <TextView android:text="q231"/>
+    </TableRow>
+</TableLayout>

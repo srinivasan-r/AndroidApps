@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/LayoutDefaults"
+             android:shrinkColumns="*"
+             android:stretchColumns="*">
+    <TableRow style="@style/TableRowLayout">
+        <!--<Space android:layout_height="30dp"-->
+        <!--android:layout_span="3"/>-->
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <Space android:layout_weight="1"/>
+        <TextView
+            style="@style/TableHeaderEmiDetails"
+            android:layout_column="1"
+            android:text="Petrol"/>
+        <TextView
+            style="@style/TableHeaderEmiDetails"
+            android:layout_column="2"
+            android:text="Diesel"/>
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <TextView
+            style="@style/TableRowEmiDetails"
+            android:layout_weight="1"
+            android:text="Loan"/>
+        <EditText
+            android:id="@+id/etPetrolCarLoan"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="600000"/>
+        <EditText
+            android:id="@+id/etDieselCarLoan"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="750000"/>
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <TextView
+            style="@style/TableRowEmiDetails"
+            android:text="Rate-Tenure"/>
+        <EditText
+            android:id="@+id/etInterest"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="9.1"/>
+        <EditText
+            android:id="@+id/etTenure"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="5"/>
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <TextView
+            style="@style/TableRowEmiDetails"
+            android:text="Oil Price"/>
+        <EditText
+            android:id="@+id/etPetrol"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="71.5"/>
+        <EditText
+            android:id="@+id/etDiesel"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="61.5"/>
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <TextView
+            style="@style/TableRowEmiDetails"
+            android:text="Mileage"/>
+        <EditText
+            android:id="@+id/etPetrolMileage"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="19"/>
+        <EditText
+            android:id="@+id/etDieselMileage"
+            style="@style/TableRowEmiDetails.Right.Edit"
+            android:hint="25"/>
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/TableRowEmiDetails"
+            android:layout_gravity="right"
+            android:hint="Date"
+            android:onClick="showDateDialog"/>
+        <TextView
+            android:id="@+id/tvDistance"
+            style="@style/TableRowEmiDetails"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:hint="Distance"/>
+    </TableRow>
+    <TableRow style="@style/TableRowLayout">
+        <!--        <Space android:layout_width="match_parent"
+                       android:layout_height="60dp"
+                       android:layout_span="3"/>-->
+    </TableRow>
+</TableLayout>
