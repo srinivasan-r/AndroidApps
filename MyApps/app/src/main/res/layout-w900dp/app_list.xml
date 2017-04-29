@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="com.vs.myapps.AppListActivity">
+
+    <!--
+    This layout is a two-pane layout for the Apps
+    master/detail flow.
+    
+    -->
+
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_list"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5" />
+
+    <FrameLayout
+        android:id="@+id/app_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>
