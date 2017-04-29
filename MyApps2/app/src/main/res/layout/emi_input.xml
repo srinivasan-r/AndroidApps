@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout style="@style/EmiInput.Layout">
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Loan Amount"/>
+        <EditText
+            android:id="@+id/etLoan"
+            style="@style/EmiInput.EditNum"
+            android:hint="2000000"/>
+    </LinearLayout>
+    <LinearLayout style="@style/EmiInput.Layout">
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Interest"/>
+        <EditText
+            android:id="@+id/etInterest"
+            style="@style/EmiInput.EditNum"
+            android:hint="9.1"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout style="@style/EmiInput.Layout">
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Tenure"/>
+        <EditText
+            android:id="@+id/etTenure"
+            style="@style/EmiInput.EditNum"
+            android:hint="20"/>
+        <ToggleButton
+            android:id="@+id/tbTenure"
+            style="@style/EmiInput"
+            android:text="ToggleButton"
+            android:textOff="Yr"
+            android:textOn="Mo"
+            android:layout_width="50dp"
+            android:minHeight="46dp"/>
+    </LinearLayout>
+    <LinearLayout style="@style/EmiInput.Layout">
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Date"/>
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/EmiInput.EditNum"
+            android:hint="01-01-2017"
+            android:onClick="showDateDialog"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+</LinearLayout>

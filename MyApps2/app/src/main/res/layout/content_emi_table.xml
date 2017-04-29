@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vs.myapps2.EmiTableActivity"
+    tools:showIn="@layout/activity_emi_table">
+
+    <LinearLayout
+        android:id="@+id/emiDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/EmiTableInfo"
+                android:text="EMI"/>
+
+            <TextView
+                android:id="@+id/tvEmi"
+                style="@style/EmiTableInfo"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/EmiTableInfo"
+                android:text="Total Interest"/>
+
+            <TextView
+                android:id="@+id/tvTotalInterest"
+                style="@style/EmiTableInfo"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/emiDetailsTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <include layout="@layout/emi_details_tablerow"/>
+        </TableLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

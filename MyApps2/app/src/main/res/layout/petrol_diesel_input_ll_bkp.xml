@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout style="@style/EmiInput.Layout">
+
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Car Loan Petrol-Diesel"/>
+
+        <EditText
+            android:id="@+id/etPetrolCarLoan"
+            style="@style/EmiInput.EditNum"
+            android:hint="600000"/>
+
+        <EditText
+            android:id="@+id/etDieselCarLoan"
+            style="@style/EmiInput.EditNum"
+            android:hint="750000"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/EmiInput.Layout">
+
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Rate-Tenure"/>
+
+        <EditText
+            android:id="@+id/etInterest"
+            style="@style/EmiInput.EditNumDec"
+            android:hint="9.1"/>
+
+        <EditText
+            android:id="@+id/etTenure"
+            style="@style/EmiInput.EditNum"
+            android:hint="5"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/EmiInput.Layout">
+
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Petrol-Diesel Price"/>
+
+        <EditText
+            android:id="@+id/etPetrol"
+            style="@style/EmiInput.EditNumDec"
+            android:hint="71.5"/>
+
+        <EditText
+            android:id="@+id/etDiesel"
+            style="@style/EmiInput.EditNumDec"
+            android:hint="61.5"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/EmiInput.Layout">
+
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Mileage Petrol-Diesel-Distance"/>
+
+        <EditText
+            android:id="@+id/etPetrolMileage"
+            style="@style/EmiInput.EditNumDec"
+            android:hint="71.5"/>
+
+        <EditText
+            android:id="@+id/etDieselMileage"
+            style="@style/EmiInput.EditNumDec"
+            android:hint="61.5"/>
+
+        <EditText
+            android:id="@+id/etDistance"
+            style="@style/EmiInput.EditNum"
+            android:hint="1000"/>
+
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Kms"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/EmiInput.Layout">
+
+        <TextView
+            style="@style/EmiInput.TextV"
+            android:text="Date"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/EmiInput.EditNum"
+            android:hint="01-01-2017"
+            android:onClick="showDateDialog"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>

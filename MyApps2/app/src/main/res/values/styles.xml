@@ -1,0 +1,88 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">18sp</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="LayoutWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutDefaults">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EmiInput" parent="LayoutWrap">
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="EmiInput.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="EmiInput.TextV">
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="EmiInput.EditNum">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="EmiInput.EditNumDec">
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="TableRowLayout">
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="TableRowEmiDetails" parent="LayoutWrap">
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="TableRowEmiDetails.Right">
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="TableRowEmiDetails.Right.Edit">
+        <!--<item name="android:background">@drawable/edit_text_border</item>-->
+    </style>
+
+    <style name="TableHeaderEmiDetails" parent="TableRowEmiDetails">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="RecycleEmiRow" parent="LayoutWrap">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="EmiTableInfo" parent="LayoutWrap">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorEmiInfo</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>
